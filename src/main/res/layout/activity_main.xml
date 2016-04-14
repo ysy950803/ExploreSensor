@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ysy.exploresensor.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tvAccelerometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="tvAccelerometer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvMagentic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tvMagentic"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/switchAccelerometer"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tvLight"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/switchMagentic"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvOrientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tvOrientation"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/switchLight"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvSensors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="此台设备拥有的传感器如下"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/switchOrientation"
+                android:layout_centerHorizontal="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关"
+                android:id="@+id/switchAccelerometer"
+                android:layout_below="@+id/tvAccelerometer"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关"
+                android:id="@+id/switchMagentic"
+                android:layout_below="@+id/tvMagentic"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关"
+                android:id="@+id/switchLight"
+                android:layout_below="@+id/tvLight"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关"
+                android:id="@+id/switchOrientation"
+                android:layout_below="@+id/tvOrientation"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
